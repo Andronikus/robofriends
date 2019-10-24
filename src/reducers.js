@@ -7,8 +7,8 @@ const initialState = {
 
 // reducer
 export const searchRobots = (state=initialState, action={}) => {
-	switch(state){
-		case: actions.SET_SEARCH_FIELD:
+	switch(action.type){
+		case actions.SET_SEARCH_FIELD:
 			return {...state, searchField: action.payload};
 		default:
 			return state;
